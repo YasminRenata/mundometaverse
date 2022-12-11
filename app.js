@@ -17,7 +17,7 @@
     require("./config/auth")(passport)
    
     
-    const port = process.env.PORT || 8089;
+    const PORT = process.env.PORT || 8089;
 
 //CONFIGURAÇOES
 app.use('/public', express.static('public'))
@@ -140,8 +140,8 @@ app.use('/public', express.static('public'))
      
 
 //OUTROS
-const PORT = 8089
+
 
 app.listen(PORT,()=>{
-    console.log("Servidor rodando!")
+    console.log("Servidor rodando! em http:/localhost:"+ PORT)
 })
